@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Card } from './Card'
 import axios from 'axios'
 export const Main = () =>{
-    const [url,setUrl]=useState("http://gateway.marvel.com/v1/public/characters?ts=1&apikey=e2d2373c73fc966fcce10e5cbe510cd8&hash=4b5dc4489764b1e2ba104ecf0e073651")
+    const [url]=useState("http://gateway.marvel.com/v1/public/characters?ts=1&apikey=e2d2373c73fc966fcce10e5cbe510cd8&hash=4b5dc4489764b1e2ba104ecf0e073651")
     const [item,setItem]=useState();
     useEffect(()=>{
         const fetch=async()=>{
